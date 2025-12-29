@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="reg">
+        <fieldset>
+            <legend>Personal Details </legend>
+            
+             <div id="lb1">
+ <label for="nme">Full Name: 
+        <input type="text" required placeholder="Enter your name" id="nme" >
+    </label>
+    </div>
+
+    <div id="mail">
+        <label for="ml">Enter email id: 
+            <input type="text" id="ml" required placeholder="Enter your email Id">
+        </label>
+    </div>
+
+    <div id="lb2">
+         <label for="contct">Contact Number: 
+        <input type="text" maxlength="10" required placeholder="Enter your contact number" id="contct" >
+    </label>
+    </div >
+
+     <div id="lb3">
+    <label for="dob"> Date of birth: 
+        <input type="date" required placeholder="Enter date of birth" id="dob" > 
+    </label>
+    </div>
+
+    <div id="lb3">
+        <label for="gndr">Gender: 
+             <label for="mle" >
+            Male
+            <input type="radio"  value="male" name="gender" id="mle"> 
+        </label>
+        <label for="fmle">
+            Female
+             <input type="radio" value="Female" name="gender" id="fmle"> 
+        </label>
+        </label>
+       
+
+
+    </div>
+        </fieldset>
+       
+<br>
+
+<fieldset>
+    <legend>Academic Details </legend>
+    <div id="acadmec">
+    <label for="collg">Enter your College Name: 
+        <input type="text" placeholder="Enter College" id="collg">
+    </label>
+
+    <label for="roll">Enter your Registration number: 
+        <input type="number" placeholder="Enter your reg. number" id="roll">
+    </label>
+    
+
+    <label for="deg">Enter your Degree: 
+        <select id="deg">
+            <option value="">Select Degree</option>
+            <option value="Btech" name="degree">Btech</option>
+            <option value="BE" name="degree"> BE</option>
+            <option value="Mtech" name="degree">Mtech</option>
+            <option value="Bsc" name="degree">Bsc</option>
+            <option value="Msc" name="degree">Msc</option>
+            <option value="BCA" name="degree">BCA</option>
+            <option value="MCA" name="degree">MCA</option>
+            <option value="Phd" name="degree">Phd</option>
+        </select>
+
+
+    </label>
+
+    <label for="brnch">Enter your Branch: 
+        <select id="brnch">
+            <option value="">Select Branch</option>
+            <option value="CSE" name="branch">Computer Science & Engineering</option>
+            <option value="AIDS" name="branch"> AIDS </option>
+            <option value="AIML" name="branch"> AIML </option>
+            <option value="IT" name="branch"> IT </option>
+            <option value="CSE-IOT" name="branch"> CSE-IOT </option>
+            <option value="VLSI" name="branch"> VLSI </option>
+        </select>
+    </label>
+
+    <label for="yr">Ente your current year: 
+        <select id="yr">
+            <option value="1st" name="year"> 1st year </option>
+             <option value="2nd" name="year"> 2nd year </option>
+              <option value="3rd" name="year"> 3rd year </option>
+               <option value="4th" name="year"> 4th year </option>
+        </select>
+    </label>
+
+    <label for="mde">Mode of study: 
+        <label for="onln">
+             <input type="radio" id="onln" value="online" name="mode">Online
+        </label>
+       <label for="ofln">
+        <input type="radio" id="ofln" value="offline" name="mode">Offline
+       </label>
+         
+       <label for="hbrd">
+         <input type="radio" id="hbrd" value="hybrid" name="mode">Hybrid
+       </label>
+         
+    </label>
+
+
+</div>
+</fieldset>
+
+<fieldset>
+    <legend>
+        Other Details 
+    </legend>
+    
+    <div id="lb4">
+        <label for="incm">Annual income: 
+            <select id="incm" name="income">
+                <option value="">Select Income</option>
+                <option value="less than 1 lpa"> below 1 lakh</option>
+                <option value=" 1-2lpa"> 1 to 2 lpa </option>
+                <option value="2-3lpa"> 2 to 3 lpa</option>
+                <option value="3+lpa"> More than 3 lpa</option>
+            </select>
+        </label>
+
+    </div>
+
+    <div id="lb5">
+    <label for="intrst"> Your interests: 
+             <label for="fin">Finance
+            <input type="checkbox" id="fin" value="Finance" name="interest">
+        </label>
+        <label for="bot">Botany
+            <input type="checkbox" id="bot" value="Botany" name="interest">
+        </label>
+        <label for="psy">Psychology
+            <input type="checkbox" id="psy" value="Psychology" name="interest">
+        </label>
+        <label for="helth">Healthcare 
+            <input type="checkbox" id="helth" value="Healthcare" name="interest">
+        </label>
+        <label for="trade">Trading and Marketing
+            <input type="checkbox" id="trade" value="Trading and Marketing" name="interest">
+        </label>
+
+    </label>
+       
+
+    </div>
+<br> 
+    <div id="addrs">
+        <label for="cit">Enter your City: 
+        <select id="cit">
+            <option value="">Select City</option>
+            <option value="Nagpur" name="city"> Nagpur </option>
+             <option value="Pune" name="city"> Pune </option>
+              <option value="Mumbai" name="city"> Mumbai </option>
+               <option value="Nashik" name="city"> Nashik </option>
+        </select>
+    </label>
+
+     <label for="pin">Pincode: 
+        <input type="text" maxlength="6" id="pin" placeholder="Enter pindcode">
+     </label>
+    </div>
+</fieldset>
+
+    <br>
+
+    <div id="passwrd">
+        <label for="user">Enter Username: 
+            <input type="text" id="user" placeholder="Enter your username">
+        </label>
+         <label for="pswrd">Enter Password : 
+            <input type="password" id="pswrd" placeholder="Enter your password">
+        </label>
+    </div>
+
+<br> 
+    <div>
+       <button type="submit" id="btn">Register</button>
+
+       
+    </div>
+
+</form>
+    
+<script src="reg_form.js"></script>
+</body>
+</html>
